@@ -1,12 +1,21 @@
 import React from "react";
 import "./Menu.css";
 
-const Menu = (props) => {
-    return (
-        <aside className="Menu">
-            <h1>Menu</h1>
-        </aside>
-    )
-}
+import { Link } from "react-router-dom";
+
+const Menu = props => (
+    <aside className="Menu">
+        <nav>
+            <ul>
+                <li>
+                    <Link to="/">Início</Link>
+                </li>
+                <li>
+                    <Link to="/about">Sobre</Link>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+)
 
 export default Menu;
