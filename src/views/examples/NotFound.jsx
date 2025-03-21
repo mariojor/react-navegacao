@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react'
+import PageTitle from '../../components/layout/PageTitle'
 
-const NotFound = props =>
-(
-    <div>
-        <h1>404</h1>
-        <p>Ops...Pagina nao encontrada</p>
+const Home = props => (
+    <div className="Home">
+        <PageTitle error
+            title="404"
+            subtitle="Opss... Página Não Encontrada!" />
     </div>
 )
 
-export default NotFound;
+export default Home
